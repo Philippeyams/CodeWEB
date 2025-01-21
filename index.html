@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water and Mining Engineering</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #005f8a;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00b4d8;
+        }
+        section {
+            padding: 60px 20px;
+        }
+        .hero {
+            background-image: url('HecRas.jpg'); /* Remplacez par une image pertinente */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .section-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .services, .team, .contact {
+            background-color: #f0f0f0;
+            margin-top: 20px;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .team img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .team-member {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #003f5c;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        /* Animations et cadres pour la section À propos */
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            animation: fadeIn 2s;
+        }
+        .about-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .about-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .about-icon {
+            font-size: 40px;
+            color: #0077b6;
+            margin-bottom: 10px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="smooth-scroll">
+
+<header>
+    <h1>Water and Mining Engineering</h1>
+    <p>Formation- Conseil-Ingenierie</p>
+</header>
+
+<nav>
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#team">Équipe</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Des solutions hydrauliques innovantes</h2>
+    <p>Spécialisé dans la gestion des ressources en eau, la prévention des inondations et les infrastructures hydrauliques.</p>
+</section>
+
+<section id="about" class="section-container">
+    <h2>À propos de nous</h2>
+    <div class="about-container">
+        <div class="about-card">
+            <div class="about-icon">💧</div>
+            <h3>Expertise</h3>
+            <p>Forts d’une expertise en ingénierie hydraulique et en gestion des risques, nous concevons des solutions durables.</p>
+        </div>
+        <div class="about-card">
+            <div class="about-icon">🌍</div>
+            <h3>Durabilité</h3>
+            <p>Nous nous engageons pour la gestion durable des ressources en eau et la protection de l’environnement.</p>
+        </div>
+        <div class="about-card">
+            <div class="about-icon">⚙️</div>
+            <h3>Innovation</h3>
+            <p>Notre approche s’appuie sur des outils de modélisation avancés et des technologies modernes.</p>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services section-container">
+    <h2>Nos services</h2>
+    <ul>
+        <li>Formations en ligne et en présentiel</li>
+        <li>Modélisation hydrodynamique des inondations</li>
+        <li>Conception et optimisation des infrastructures hydrauliques</li>
+        <li>Gestion durable des ressources en eau</li>
+        <li>Conception et dimensionnement des réseaux d'irrigation</li>
+        <li>Études de faisabilité pour les projets hydrauliques</li>
+        <li>Cartographie et systèmes d'information géographique</li>
+    </ul>
+</section>
+
+<section id="team" class="team section-container">
+    <h2>Notre équipe</h2>
+    <div class="team-member">
+        <img src="team1.jpg" alt="Nom Prénom 1">
+        <p><strong>Nom Prénom 1</strong></p>
+        <p>Ingénieur hydraulicien spécialisé en modélisation hydrodynamique.</p>
+    </div>
+    <div class="team-member">
+        <img src="team2.jpg" alt="Nom Prénom 2">
+        <p><strong>Nom Prénom 2</strong></p>
+        <p>Expert en gestion durable des ressources en eau.</p>
+    </div>
+    <div class="team-member">
+        <img src="team3.jpg" alt="Nom Prénom 3">
+        <p><strong>Nom Prénom 3</strong></p>
+        <p>Responsable des infrastructures hydrauliques.</p>
+    </div>
+</section>
+
+<section id="contact" class="contact section-container">
+    <h2>Contactez-nous</h2>
+    <p>Email : contact@WME.com</p>
+    <p>Téléphone : +33 XXXXXXXXX</p>
+    <p>Adresse : Ouagadougou, Burkina Faso</p>
+</section>
+
+<footer>
+    <p>© 2025 Water and Mining Engineering - Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
